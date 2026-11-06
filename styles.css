@@ -1,0 +1,189 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #173449;
+  line-height: 1.7;
+  background: #ffffff;
+}
+
+header {
+  background: white;
+  padding: 22px 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.logo span {
+  color: #39a995;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #173449;
+  font-size: 14px;
+}
+
+.hero {
+  background: #102b40;
+  color: white;
+  padding: 120px 9%;
+  min-height: 520px;
+}
+
+.tag {
+  color: #39b49c;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: clamp(42px, 7vw, 75px);
+  line-height: 1.15;
+  margin-bottom: 25px;
+}
+
+.hero h1 span {
+  color: #66cbb6;
+}
+
+.hero p:not(.tag) {
+  max-width: 570px;
+  color: #d1dce2;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  background: #66cbb6;
+  color: #102b40;
+  padding: 13px 25px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+.section {
+  padding: 85px 9%;
+}
+
+.section h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.section p {
+  max-width: 750px;
+  margin-bottom: 18px;
+  color: #60727d;
+}
+
+.services {
+  background: #f3f7f5;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 35px;
+}
+
+.cards article {
+  background: white;
+  padding: 28px;
+  border: 1px solid #e3ece9;
+  border-radius: 6px;
+}
+
+.cards h3 {
+  margin-bottom: 12px;
+  color: #173449;
+}
+
+.cards p {
+  font-size: 14px;
+  margin: 0;
+}
+
+.section > a:not(.btn) {
+  color: #168b79;
+  font-weight: bold;
+}
+
+.contact {
+  background: #102b40;
+  color: white;
+}
+
+.contact h2 {
+  color: white;
+}
+
+.contact p {
+  color: #d1dce2;
+}
+
+footer {
+  background: #091e2c;
+  color: white;
+  text-align: center;
+  padding: 40px 8%;
+}
+
+footer p {
+  color: #aabcc5;
+  font-size: 12px;
+  margin-top: 10px;
+}
+
+@media (max-width: 700px) {
+  header {
+    padding: 18px 5%;
+  }
+
+  nav {
+    gap: 13px;
+  }
+
+  .hero {
+    padding: 85px 7%;
+  }
+
+  .section {
+    padding: 65px 7%;
+  }
+
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
